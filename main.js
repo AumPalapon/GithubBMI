@@ -10,13 +10,13 @@ function calculate() {
 	bmi = bmi.toFixed(1);
 
 	if (bmi <= 18.4) {
-		measure = "Your BMI is " + bmi + " which means " + "you are Underweight";
+		measure = "ค่าดัชนีมวลกายของคุณคือ " + bmi + " ซึ่งหมายความว่า " + "คุณมีน้ำหนักน้อย";
 	} else if (bmi >= 18.5 && bmi <= 24.9) {
-		measure = "Your BMI is " + bmi + " which means " + "You are Normal";
+		measure = "ค่าดัชนีมวลกายของคุณคือ " + bmi + " ซึ่งหมายความว่า " + "คุณเป็นคนปกติ";
 	} else if (bmi >= 25 && bmi <= 29.9) {
-		measure = "Your BMI is " + bmi + " which means " + "You are Overweight";
+		measure = "ค่าดัชนีมวลกายของคุณคือ " + bmi + " ซึ่งหมายความว่า " + "คุณมีน้ำหนักเกิน";
 	} else if (bmi >= 30) {
-		measure = "Your BMI is " + bmi + " which means " + "You are Obese";
+		measure = "ค่าดัชนีมวลกายของคุณคือ " + bmi + " ซึ่งหมายความว่า " + "คุณเป็นโรคอ้วน";
 	}
 	
 
@@ -30,6 +30,6 @@ function calculate() {
 		document.getElementById("results").innerHTML = measure;
 	}
 	if (weight < 0) {
-		document.getElementById("results").innerHTML = "Negative Values not Allowed";
+		document.getElementById("results").innerHTML = "ไม่อนุญาตให้ใช้ค่าลบ";
 	}
 }
